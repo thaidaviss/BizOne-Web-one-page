@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,500;0,600;0,800;1,300;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="./js/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/toggle_scroll.js"></script>
+    <script src="./js/displayToggleLibrary.js"></script>
+    <script src="./js/displayAnimate.js"></script>
+    <script src="./js/countLibrary.js"></script>
+    <script src="./js/slideShowLibrary.js"></script>
+    <script src="./js/spinChartCircleLibrary.js"></script>
+    <script src="./js/filterKeword.js"></script>
+    <script src="./js/publication.js"></script>
+</head>
+
+<body >
+    <div class="wrapper">
+        <!-- nav and banner -->
+        <div class="header">
+            <!-- navigation menu -->
+            <div class="navbar">
+               
+                <div class="container">
+                    
+                    <div class="navbar__logo">
+                        <img src="./img/logo-white.png" alt="this is logo!" class="logo">
+                        <img src="./img/logo.png" class="logo_black" alt="">
+                    </div>
+                    <div class="navbar__list">
+                        <ul class="navbar__list-menu">
+
+                            <li class="navbar__list-item navbar__list-active "><a href="#home">HOME </a> </li>
+                            <li class="navbar__list-item"><a href="#about">ABOUT </a> </li>
+                            <li class="navbar__list-item"><a href="#team">TEAM </a> </li>
+                            <li class="navbar__list-item"><a href="#work">WORK </a> </li>
+                            <li class="navbar__list-item"><a href="#price">PRICES </a> </li>
+                            <li class="navbar__list-item"><a href="#blog">BLOG </a> </li>
+                            <li class="navbar__list-item"><a href="#contact">CONTACT US </a> </li>
+                        </ul>
+                        <div class="navbar__list-social">
+                            <a href="" class="navbar__list-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="" class="navbar__list-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="" class="navbar__list-icon"><i class="fab fa-instagram"></i></a>
+                        </div>
+                       
+                        <label for="toggle-nav" class="navbar__icon-navbar">
+        
+                            <i class="far fa-bars"></i>
+                        </label>
+                    </div>
+                </div>
+                <input type="checkbox" name="toggle-nav" id="toggle-nav">
+                <div class="navbar__hidden">
+                    <ul class="navbar__hidden--list">
+                        <li class="navbar__hidden--item navbar__hidden--active"><a href="#home">Home</a></li>
+                        <li class="navbar__hidden--item"><a href="#about">About</a></li>
+                        <li class="navbar__hidden--item"><a href="#team">Team</a></li>
+                        <li class="navbar__hidden--item"><a href="#work">Work</a></li>
+                        <li class="navbar__hidden--item"><a href="#price">Price</a></li>
+                        <li class="navbar__hidden--item"><a href="#blog">Blog</a></li>
+                        <li class="navbar__hidden--item"><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="banner" id="top">
+                <div class="banner_item">
+
+                    <div class="container">
+                        <img src="./img/main-banner.jpg" alt="">
+                        <div class="banner_content banner_content-1">
+                            <p class="">Quickly setup your website</p>
+                            <h2>BizOne is designed specially</h2>
+                            <h2>for Startups
+                            </h2>
+                            <p>It has all unique & new digital experience layouts.
+                            </p>
+                            <div class="banner_btn">
+                                <a href="#" class="btn btn-read">Read More</a>
+                                <a href="#" class="btn btn-buy">Buy BizOne</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="banner_item">
+
+                    <div class="container">
+                        <img src="./img/main-banner2.jpg" alt="">
+                        <div class="banner_content banner_content-2">
+                            <p>Quickly setup your website</p>
+                            <h2>BizOne is designed specially</h2>
+                            <h2>for Startups
+                            </h2>
+                            <p>It has all unique & new digital experience layouts.
+                            </p>
+                            <div class="banner_btn">
+                                <a href="#" class="btn btn-read">Read More</a>
+                                <a href="#" class="btn btn-buy">Buy BizOne</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="banner_item">
+
+                    <div class="container">
+                        <img src="./img/main-banner3.jpg" alt="">
+                        <div class="banner_content banner_content-3">
+                            <p>Quickly setup your website</p>
+                            <h2>BizOne is designed specially</h2>
+                            <h2>for Startups
+                            </h2>
+                            <p>It has all unique & new digital experience layouts.
+                            </p>
+                            <div class="banner_btn">
+                                <a href="#" class="btn btn-read">Read More</a>
+                                <a href="#" class="btn btn-buy">Buy BizOne</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="banner_pn banner_pn-prev">
+                    <img src="./img/prev.png" class="banner_prev" alt="">
+                </div>
+                <div class=" banner_pn banner_pn-next ">
+                    <img src="./img/next.png" class="banner_next" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="service" id="about" >
+            <div class="container">
+                <p class="title__heading">Our Valued Services</p>
+                <h2 class="title__name">What We Offer</h2>
+
+                <div class="service__list">
+                    <div class="service__item">
+                        <a href="">
+                            <i class="fal fa-cog"></i>
+                            <h4 class="service__title">Unlimited Features</h4>
+                        </a>
+
+                        <p>Keep away from people who try to belittle your ambitions. Small people always do that but the
+                            really great.</p>
+                    </div>
+                    <div class="service__item">
+                        <a href="">
+                            <i class="fal fa-umbrella"></i>
+                            <h4 class="service__title">Creative Design</h4>
+                        </a>
+
+                        <p>Keep away from people who try to belittle your ambitions. Small people always do that but the
+                            really great.</p>
+                    </div>
+                    <div class="service__item">
+                        <a href=""> <i class="fal fa-alarm-clock"></i>
+                            <h4 class="service__title">Responsive Design</h4>
+                        </a>
+
+                        <p>Keep away from people who try to belittle your ambitions. Small people always do that but the
+                            really great.</p>
+                    </div>
+                    <div class="service__item">
+                        <a href="">
+                            <i class="fal fa-lightbulb-on"></i>
+                            <h4 class="service__title">Responsive Design</h4>
+                        </a>
+
+                        <p>Keep away from people who try to belittle your ambitions. Small people always do that but the
+                            really great.</p>
+                    </div>
+                    <div class="service__item">
+                        <a href="">
+                            <i class="fal fa-globe-stand"></i>
+                            <h4 class="service__title">Responsive Design</h4>
+                        </a>
+
+                        <p>Keep away from people who try to belittle your ambitions. Small people always do that but the
+                            really great.</p>
+                    </div>
+                    <div class="service__item">
+
+                        <a href="">
+                            <i class="fal fa-book"></i>
+                            <h4 class="service__title">Responsive Design</h4>
+                        </a>
+
+                        <p>Keep away from people who try to belittle your ambitions. Small people always do that but the
+                            really great.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner-2">
+            <div class="container">
+                <p>Unleash your creative potential with BizOne</p>
+                <h3>Looking For Exclusive Digital Services?</h3>
+
+                <div class="banner-3-btn">
+                    <a href="" class="btn btn-talk">Let's talk</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="uniques">
+            <div class="container">
+                <div class="uniques__image">
+                    <img src="./img/full-responsive.png" alt="" class="uniques__img">
+
+                </div>
+                <div class="uniques__content">
+                    <h2>Unique Experience </h2>
+                    <p>We have a number of different teams within our agency that specialise in different areas of
+                        business so you can be sure that you won’t receive a generic service and although we can’t boast
+                        years and years of service we can ensure you that is a good thing in this industry.</p>
+                    <h3>Features</h3>
+                    <ul class="uniques__list">
+                        <li class="uniques__item">Creative Design</li>
+                        <li class="uniques__item">Website Development</li>
+                        <li class="uniques__item">Mobile Development</li>
+                        <li class="uniques__item"> Website Designing</li>
+                        <li class="uniques__item">Online Marketing</li>
+                        <li class="uniques__item">Graphic Design</li>
+                        <li class="uniques__item">Graphic Design</li>
+                        <li class="uniques__item">Wordpress Theme</li>
+                    </ul>
+                    <div class="uniques__devices">
+                        <i class="fal fa-laptop"></i>
+                        <i class="fal fa-tablet"></i>
+                        <i class="fal fa-mobile"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="count-interactive">
+            <li class="count-interactive__item">
+                <div class="count-interactive__content">
+                    <i class="fal fa-smile-beam"></i>
+                    <h3 class="count-interactive__count-1">60</h3>
+                    <p>Happy Customer</p>
+                </div>
+
+            </li>
+            <li class="count-interactive__item">
+                <div class="count-interactive__content">
+                    <i class="fal fa-book"></i>
+                    <h3 class="count-interactive__count-2">300</h3>
+                    <p>Lines Of Codes</p>
+                </div>
+
+            </li>
+            <li class="count-interactive__item">
+                <div class="count-interactive__content"> <i class="fal fa-alarm-clock"></i>
+                    <h3 class="count-interactive__count-3">200</h3>
+                    <p>Project Completed</p>
+                </div>
+
+            </li>
+            <li class="count-interactive__item">
+                <div class="count-interactive__content">
+                    <i class="fal fa-cog"></i>
+                    <h3 class="count-interactive__count-4">200</h3>
+                    <p>Cup Of Coffees</p>
+                </div>
+
+            </li>
+
+        </ul>
+        <div class="performance">
+            <p class="title__heading">Some Of Our Skills</p>
+            <h2 class="title__name">Our Expertise</h2>
+            <div class="container">
+                <div class="performance__item performance__item-1">
+                    <svg>
+                        <circle class="track"></circle>
+                        <circle class="process"></circle>
+                    </svg>
+                    <span class="performance_percent">0%</span>
+                    <p>Web Development</p>
+                </div>
+                <div class="performance__item performance__item-2">
+                    <svg>
+                        <circle class="track"></circle>
+                        <circle class="process"></circle>
+                    </svg>
+                    <span class="performance_percent">0%</span>
+                    <p>usability</p>
+                </div>
+                <div class="performance__item performance__item-3">
+                    <svg>
+                        <circle class="track"></circle>
+                        <circle class=" process process"></circle>
+                    </svg>
+                    <span class="performance_percent">0%</span>
+                    <p>Development</p>
+                </div>
+                <div class="performance__item performance__item-4">
+                    <svg>
+                        <circle class="track"></circle>
+                        <circle class="process"></circle>
+                    </svg>
+                    <span class="performance_percent">0%</span>
+                    <p>App development</p>
+                </div>
+                <div class="performance__item performance__item-5">
+                    <svg>
+                        <circle class="track"></circle>
+                        <circle class="process"></circle>
+                    </svg>
+                    <span class="performance_percent">0%</span>
+                    <p>performence</p>
+                </div>
+            </div>
+        </div>
+        <div class="we-do">
+            <div class="container">
+                <p class="title__heading">Our Service Keeps You Happy</p>
+                <h2 class="title__name">What We Do</h2>
+                <div class="we-do__list">
+                    <div class="we-do__item">
+                        <div class="we-do__item-header">
+
+                        </div>
+                        <div class="we-do__item-content">
+                            <h3>Hot Design</h3>
+                            <p>Keep away from people who try to belittle your ambitions. Small people always do that.
+                            </p>
+                            <a href="#" class="we-do__item-link">READ MORE</a>
+                        </div>
+                        <div class="we-do__item-icon">
+                            <i class="fal fa-cog"></i>
+                        </div>
+                    </div>
+                    <div class="we-do__item">
+                        <div class="we-do__item-header">
+
+                        </div>
+                        <div class="we-do__item-content">
+                            <h3>Hot Design</h3>
+                            <p>Keep away from people who try to belittle your ambitions. Small people always do that.
+                            </p>
+                            <a href="#" class="we-do__item-link">READ MORE</a>
+                        </div>
+                        <div class="we-do__item-icon">
+                            <i class="fal fa-cog"></i>
+                        </div>
+                    </div>
+                    <div class="we-do__item">
+                        <div class="we-do__item-header">
+
+                        </div>
+                        <div class="we-do__item-content">
+                            <h3>Hot Design</h3>
+                            <p>Keep away from people who try to belittle your ambitions. Small people always do that.
+                            </p>
+                            <a href="#" class="we-do__item-link">READ MORE</a>
+                        </div>
+                        <div class="we-do__item-icon">
+                            <i class="fal fa-cog"></i>
+                        </div>
+                    </div>
+                    <div class="we-do__item">
+                        <div class="we-do__item-header">
+
+                        </div>
+                        <div class="we-do__item-content">
+                            <h3>Hot Design</h3>
+                            <p>Keep away from people who try to belittle your ambitions. Small people always do that.
+                            </p>
+                            <a href="#" class="we-do__item-link">READ MORE</a>
+                        </div>
+                        <div class="we-do__item-icon">
+                            <i class="fal fa-cog"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thinker" id="team">
+            <div class="container">
+                <p class="title__heading">Our Service Keeps You Happy</p>
+                <h2 class="title__name">What We Do</h2>
+                <div class="thinker__list">
+                    <div class="thinker__item">
+                        <div class="thinker__item-img">
+                            <img src="./img/thinker.jpg" alt="">
+                            <div class="thinker__item-social">
+                                <a href="" class="thinker__item-icon"><i class="fab fa-facebook-f"></i></a>
+                                <a href="" class="thinker__item-icon"><i class="fab fa-twitter"></i></a>
+                                <a href="" class="thinker__item-icon"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="thinker__item-content">
+                            <h3 class="thinker__item-name">
+                                John Doe
+                            </h3>
+                            <small class="thinker__item-position">Ceo</small>
+                            <p class="thinker__item-slogan">
+                                Keep away from people who try to belittle your ambitions.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="thinker__item">
+                        <div class="thinker__item-img">
+                            <img src="./img/thinker2.jpg" alt="">
+                            <div class="thinker__item-social">
+                                <a href="" class="thinker__item-icon"><i class="fab fa-facebook-f"></i></a>
+                                <a href="" class="thinker__item-icon"><i class="fab fa-twitter"></i></a>
+                                <a href="" class="thinker__item-icon"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="thinker__item-content">
+                            <h3 class="thinker__item-name">
+                                Mary Jane
+                            </h3>
+                            <small class="thinker__item-position">Co-Founder</small>
+                            <p class="thinker__item-slogan">
+                                Keep away from people who try to belittle your ambitions. Small people always do that.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="thinker__item">
+                        <div class="thinker__item-img">
+                            <img src="./img/thinker3.jpg" alt="">
+                            <div class="thinker__item-social">
+                                <a href="" class="thinker__item-icon"><i class="fab fa-facebook-f"></i></a>
+                                <a href="" class="thinker__item-icon"><i class="fab fa-twitter"></i></a>
+                                <a href="" class="thinker__item-icon"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="thinker__item-content">
+                            <h3 class="thinker__item-name">
+                                Josh Clark
+                            </h3>
+                            <small class="thinker__item-position">Sales Head</small>
+                            <p class="thinker__item-slogan">
+                                Keep away from people who try to belittle your ambitions. Small people always do that.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="last-project" id="work">
+            <p class="title__heading">What We Do</p>
+            <h2 class="title__name">Latest Projects</h2>
+            <div class="last-project__nav">
+                <a href="#" class="last-project__nav-item last-project__nav-active">All</a>
+                <a href="" class="last-project__nav-item">Brand</a>
+                <a href="" class="last-project__nav-item">Design</a>
+                <a href="" class="last-project__nav-item">Graphic</a>
+                <a href="" class="last-project__nav-item">Video</a>
+            </div>
+            <div class="last-project__left">
+                <div class="last-project__item Brand">
+                    <img src="./img/workimg1.jpg" alt="">
+                    <div class="last-project__item-content">
+                        <a data-fancybox="gallery" href="./img/workimg1.jpg" class="last-project__link"></a>
+                        <h2 class="last-project__item-title">
+                            Creative Design
+                        </h2>
+                        <div class="line"></div>
+                        <p>Print Media</p>
+                    </div>
+                </div>
+                <div class="last-project__item last-project__item-small Video">
+                    <img src="./img/workimg4.jpg" alt="">
+                    <div class="last-project__item-content">
+                        <a data-fancybox="gallery" href="https://player.vimeo.com/video/145241713"
+                            class="last-project__link"></a>
+                        <h2 class="last-project__item-title">
+                            Creative Design
+                        </h2>
+                        <div class="line"></div>
+                        <p>Print Media</p>
+                    </div>
+                </div>
+                <div class="last-project__item last-project__item-small Graphic">
+                    <img src="./img/workimg5.jpg" alt="">
+                    <div class="last-project__item-content">
+                        <a data-fancybox="gallery" href="./img/workimg5.jpg" class="last-project__link"></a>
+
+                        <h2 class="last-project__item-title">
+                            Creative Design
+                        </h2>
+                        <div class="line"></div>
+                        <p>Print Media</p>
+                    </div>
+                </div>
+            </div>
+            <div class="last-project__right">
+
+                <div class="last-project__item last-project__item-small Graphic">
+                    <img src="./img/workimg2.jpg" alt="">
+                    <div class="last-project__item-content">
+                        <a data-fancybox="gallery" href="./img/workimg2.jpg" class="last-project__link"></a>
+                        <h2 class="last-project__item-title">
+                            Creative Design
+                        </h2>
+                        <div class="line"></div>
+                        <p>Print Media</p>
+                    </div>
+                </div>
+                <div class="last-project__item last-project__item-small Design">
+                    <img src="./img/workimg3.jpg" alt="">
+                    <div class="last-project__item-content">
+                        <a data-fancybox="gallery" href="./img/workimg3.jpg" class="last-project__link"></a>
+                        <h2 class="last-project__item-title">
+                            Creative Design
+                        </h2>
+                        <div class="line"></div>
+                        <p>Print Media</p>
+                    </div>
+                </div>
+                <div class="last-project__item Brand">
+                    <img src="./img/workimg6.jpg" alt="">
+                    <div class="last-project__item-content">
+                        <a data-fancybox="gallery" href="./img/workimg6.jpg" class="last-project__link"></a>
+                        <h2 class="last-project__item-title">
+                            Creative Design
+                        </h2>
+                        <div class="line"></div>
+                        <p>Print Media</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="price-table" id="price">
+            <div class="container">
+                <p class="title__heading">Passionate About Perfection</p>
+                <h2 class="title__name">Pricing Tables</h2>
+                <div class="price-table__list">
+                    <div class="price-table__item">
+                        <h3 class="price-table__item-name">Basic</h3>
+                        <h2 class="price-table__item-price">$9.90</h2>
+                        <p>Perfect for single freelancers who work by themselves</p>
+                        <ul>
+                            <li>Support forum</li>
+                            <li>Free hosting</li>
+                            <li>40MB of storage space</li>
+                        </ul>
+                        <a href="" class="btn">Choose plan</a>
+                    </div>
+                    <div class="price-table__item">
+                        <h3 class="price-table__item-name">Popular</h3>
+                        <h2 class="price-table__item-price">$29,90</h2>
+                        <p>Suitable for small businesses with up to 5 employees</p>
+                        <ul>
+                            <li>Unlimited calls</li>
+                            <li>Free hosting</li>
+                            <li>10 hours of support</li>
+                            <li>Social media integration</li>
+                            <li>1GB of storage space</li>
+                        </ul>
+                        <a href="" class="btn">Choose plan</a>
+                    </div>
+                    <div class="price-table__item">
+                        <h3 class="price-table__item-name">Premier</h3>
+                        <h2 class="price-table__item-price">$59,90</h2>
+                        <p>Great for large businesses with more than 5 employees</p>
+                        <ul>
+                            <li>Unlimited calls</li>
+                            <li>Free hosting</li>
+                            <li>Unlimited hours of support</li>
+                            <li>Social media integration</li>
+                            <li>Anaylitcs integration</li>
+                            <li>Unlimited storage space</li>
+                        </ul>
+                        <a href="" class="btn">Choose plan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-bottom">
+            <div class="container">
+                <small>People Love Our Work</small>
+                <h2>Our Happy Clients</h2>
+                <div class="slider-bottom__slider">
+                    <div class="slider-bottom__list">
+                        <div class="slider-bottom__item">
+                            <p>We have a number of different teams within our agency that specialise in different areas
+                                of business so you can be sure that you won’t receive a generic service and although we
+                                can’t boast years and years of service we can ensure you that is a good thing in this
+                                industry. </p>
+                            <h6>ohn smith - upwork, client</h6>
+                            <img src="./img/stars.png" alt="">
+                        </div>
+                        <div class="slider-bottom__item">
+                            <p>We have a number of different teams within our agency that specialise in different areas
+                                of business so you can be sure that you won’t receive a generic service and although we
+                                can’t boast years and years of service we can ensure you that is a good thing in this
+                                industry. </p>
+                            <h6>ohn smith - upwork, client</h6>
+                            <img src="./img/stars.png" alt="">
+                        </div>
+                        <div class="slider-bottom__item">
+                            <p>We have a number of different teams within our agency that specialise in different areas
+                                of business so you can be sure that you won’t receive a generic service and although we
+                                can’t boast years and years of service we can ensure you that is a good thing in this
+                                industry. </p>
+                            <h6>ohn smith - upwork, client</h6>
+                            <img src="./img/stars.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="slider-bottom__btn">
+                    <a href="" class="slider-bottom__prev"><i class="fal fa-chevron-circle-left"></i></a>
+                    <a href="" class="slider-bottom__next"><i class="fal fa-chevron-circle-right"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="publications" id="blog">
+
+            <div class="container">
+                <p class="title__heading">Stay Always Updated</p>
+                <h2 class="title__name">Our Publications</h2>
+                <div class="publications__btn">
+                    <a href="" class="publications__btn--left"><i class="far fa-chevron-circle-left"></i></a>
+                    <a href="" class="publications__btn--right"><i class="far fa-chevron-circle-right"></i></a>
+                </div>
+                <div class="publications__slider">
+                    <div class="publications__list">
+                        <div class="publications__item">
+                            <div class="publications__img">
+                                <img src="./img/publication1.jpg" alt="">
+                            </div>
+                            <div class="publications__content">
+                                <h5>18 November 2021</h5>
+                                <h3>Familiar idea with brand</h3>
+                                <p>by <a href="" class="byName">Smith</a> - <a href="" class="comment"> 5 Comments</a>
+                                </p>
+                                <p>Keep away from people who try to belittle your ambitions Small people always do that
+                                    but the really great Friendly.</p>
+                                <a href="" class="btn">READ MORE</a>
+                            </div>
+                        </div>
+                        <div class="publications__item">
+                            <div class="publications__img">
+                                <img src="./img/publication2.jpg" alt="">
+                            </div>
+                            <div class="publications__content">
+                                <h5>18 November 2021</h5>
+                                <h3>Familiar idea with brand</h3>
+                                <p>by <a href="" class="byName">Smith</a> - <a href="" class="comment"> 5 Comments</a>
+                                </p>
+                                <p>Keep away from people who try to belittle your ambitions Small people always do that
+                                    but the really great Friendly.</p>
+                                <a href="" class="btn">READ MORE</a>
+                            </div>
+                        </div>
+                        <div class="publications__item">
+                            <div class="publications__img">
+                                <img src="./img/publication3.jpg" alt="">
+                            </div>
+                            <div class="publications__content">
+                                <h5>18 November 2021</h5>
+                                <h3>Familiar idea with brand</h3>
+                                <p>by <a href="" class="byName">Smith</a> - <a href="" class="comment"> 5 Comments</a>
+                                </p>
+                                <p>Keep away from people who try to belittle your ambitions Small people always do that
+                                    but the really great Friendly.</p>
+                                <a href="" class="btn">READ MORE</a>
+                            </div>
+                        </div>
+                        <div class="publications__item">
+                            <div class="publications__img">
+                                <img src="./img/publication1.jpg" alt="">
+                            </div>
+                            <div class="publications__content">
+                                <h5>18 November 2021</h5>
+                                <h3>Familiar idea with brand</h3>
+                                <p>by <a href="" class="byName">Smith</a> - <a href="" class="comment"> 5 Comments</a>
+                                </p>
+                                <p>Keep away from people who try to belittle your ambitions Small people always do that
+                                    but the really great Friendly.</p>
+                                <a href="" class="btn">READ MORE</a>
+                            </div>
+                        </div>
+                        <div class="publications__item">
+                            <div class="publications__img">
+                                <img src="./img/publication2.jpg" alt="">
+                            </div>
+                            <div class="publications__content">
+                                <h5>18 November 2021</h5>
+                                <h3>Familiar idea with brand</h3>
+                                <p>by <a href="" class="byName">Smith</a> - <a href="" class="comment"> 5 Comments</a>
+                                </p>
+                                <p>Keep away from people who try to belittle your ambitions Small people always do that
+                                    but the really great Friendly.</p>
+                                <a href="" class="btn">READ MORE</a>
+                            </div>
+                        </div>
+                        <div class="publications__item">
+                            <div class="publications__img">
+                                <img src="./img/publication3.jpg" alt="">
+                            </div>
+                            <div class="publications__content">
+                                <h5>18 November 2021</h5>
+                                <h3>Familiar idea with brand</h3>
+                                <p>by <a href="" class="byName">Smith</a> - <a href="" class="comment"> 5 Comments</a>
+                                </p>
+                                <p>Keep away from people who try to belittle your ambitions Small people always do that
+                                    but the really great Friendly.</p>
+                                <a href="" class="btn">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="contact" id="contact">
+            <p class="contact__get">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod <a href="" class="btn">Get in touch</a>
+            </p>
+            <div class="contact__list">
+                <div class="contact__item">
+                    <p>Open For You</p>
+                    <h4>We're Here</h4>
+                    <p>Keep away from people who try to belittle your ambitions Small people always do that but the really great Friendly.</p>
+                    <h5>Postal Adress: <p>198 West 21th Street Victoria 8007, Australia</p> </h5>
+                    <h5>Phone: <p>(654) 332-112-222</p> </h5>
+                    <h5>Email: <a href="">email@website.com</a> </h5>
+                    <div class="contact__social">
+                        <a href="" class=" contact__social--item"><i class="fab fa-facebook-f"></i></a>
+                        <a href="" class=" contact__social--item"><i class="fab fa-twitter"></i></a>
+                        <a href="" class=" contact__social--item"><i class="fab fa-dribbble"></i></a>
+                        <a href="" class=" contact__social--item"><i class="fab fa-flickr"></i></a>
+                    </div>
+                </div>
+                <div class="contact__item">
+                    <form action="" method="POST" class="contact__form">
+                        <p>With Propositions</p>
+                        <h4>Contact Us</h4>
+                        <input type="text" class="your-name" placeholder="Your Name">
+                        <input type="text"class = "email" placeholder="Email Address">
+                        <textarea name="message" id="message" cols="40" rows="10" placeholder="Message"></textarea>
+                        <a href="" class="btn btn-message">Send Message</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+           <ul class="footer__menu">
+               <li class="footer__menu--item"><a href="#top">Home</a>/</li>
+               <li class="footer__menu--item"><a href="#about">About</a>/</li>
+               <li class="footer__menu--item"><a href="#work">Portfolio</a>/</li>
+               <li class="footer__menu--item"><a href="#blog">Blog </a>/</li>
+               <li class="footer__menu--item"><a href="team">Team</a>/</li>
+               <li class="footer__menu--item"><a href="contact">Contact Us</a></li>
+           </ul>
+           <p>Copyright © 2016 BizOne. all rights reserved.</p>
+
+        </div>
+        <div class="scroll-top">
+            <a href="#top"><i class="fa fa-angle-double-up"></i></a>
+        </div>
+    </div>
+</body>
+
+</html>
